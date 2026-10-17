@@ -1,0 +1,14 @@
+{
+  "cluster": "asterion-local",
+  "nodes": [
+    { "node_id": 1, "host": "127.0.0.1", "port": 7100, "data_dir": "data/node1" },
+    { "node_id": 2, "host": "127.0.0.1", "port": 7101, "data_dir": "data/node2" },
+    { "node_id": 3, "host": "127.0.0.1", "port": 7102, "data_dir": "data/node3" }
+  ],
+  "replication": {
+    "replication_factor": 3,
+    "partition_count": 4,
+    "consistency_level": "quorum"
+  },
+  "note": "Distribute across machines by changing each node's host to its address and giving each node the full node list in its own config's replication.peers."
+}

@@ -1,0 +1,25 @@
+# Build output
+build/
+build-*/
+out/
+*.vcxproj.user
+.vs/
+
+# Runtime data / logs / test artifacts (never committed)
+data/
+logs/
+*.log
+*.astseg
+*.astidx
+
+# IDE
+.idea/
+.vscode/
+CMakeUserPresets.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temp fault-simulator artifacts
+fault_out/
